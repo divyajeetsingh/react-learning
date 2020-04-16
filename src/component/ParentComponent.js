@@ -15,12 +15,12 @@ class ParentComponentCC extends Component {
 
     componentDidMount() {
         console.log("sjsnhjsbhj")
-        setInterval(() => {
-            console.log("sjsnhjsbhj")
-            this.setState({
-                name: "Divyajeet "
-            })
-        }, 2000)
+        // setInterval(() => {
+        //     console.log("sjsnhjsbhj")
+        //     this.setState({
+        //         name: "Divyajeet "
+        //     })
+        // }, 2000)
     }
     render() {
         return (<div>

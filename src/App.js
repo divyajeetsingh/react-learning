@@ -21,6 +21,13 @@ import LifCycleA from './component/LifeCycleA'
 import ParentComponentCC from './component/ParentComponent'
 import RefComponent from './component/RefDemo'
 
+import FocusInput from './component/FocusInput'
+
+import FrparentCom from './component/FrParentInput'
+
+import UserComponent from './component/userCom'
+import PostList2 from './component/PostList'
+import PostForm from './component/PostForm'
 function App() {
   return (
     <div className="App">
@@ -67,7 +74,13 @@ function App() {
       <ParentComponentCC></ParentComponentCC>
       <RefComponent ></RefComponent>
 
+      <FocusInput></FocusInput>
 
+      <FrparentCom></FrparentCom>
+      <UserComponent name={(isLogged) => isLogged ? 'Divyajeet  Singh' : 'guest'}></UserComponent>
+
+      <PostForm />
+      <PostList2 />
 
       {/* <googleGreeting></googleGreeting>
        */}

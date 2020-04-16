@@ -19,6 +19,10 @@ class RefComponent extends Component {
         // console.log(this.inputRef, "Creaqte Ref  Method ")
         // this.inputRef.current.focus()
         //second AProach
+        if (this.cbrRef) {
+
+            this.cbrRef.focus()
+        }
 
 
     }
