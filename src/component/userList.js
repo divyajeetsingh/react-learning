@@ -1,4 +1,6 @@
 import React from 'react';
+
+import PersonBreakComponent from './personList'
 function NameList() {
 
 
@@ -30,17 +32,24 @@ function NameList() {
     ]
 
 
-    const filterPerson = presonList.map((person) => <h2>{person.name}  is intrested in {person.intrest}   </h2>
+    // const filterPerson = presonList.map((person) => <h2>{person.name}  is intrested in {person.intrest}   </h2>
 
 
-    )
+
+    // )
+
+
+    // Second Approach to access person list  
+
+    //  key  make unioque in the list 
+    const filterPerson = presonList.map((person) => <PersonBreakComponent key={person.name.toString()} person={person} />)
 
 
 
 
 
     const nameList = names.map(name =>
-        <h2>{name}</h2>
+        <h2 key={name} >  {name}</h2>
     )
 
 
