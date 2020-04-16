@@ -48,8 +48,8 @@ function NameList() {
 
 
 
-    const nameList = names.map(name =>
-        <h2 key={name} >  {name}</h2>
+    const nameList = names.map((name, index) =>
+        <h2 key={index} > {index}  {name}  </h2>
     )
 
 

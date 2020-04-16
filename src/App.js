@@ -14,6 +14,13 @@ import EventBind from './component/EventBind'
 import Parent from './component/ParenntComponent'
 import Greeting from './component/userGreting'
 import NameList from './component/userList'
+import Stylesheet from './component/Stylesheet'
+import FormHandler from './component/formHandling'
+import FormHandlerConst from './component/FormHandlingConst'
+import LifCycleA from './component/LifeCycleA'
+import ParentComponentCC from './component/ParentComponent'
+import RefComponent from './component/RefDemo'
+
 function App() {
   return (
     <div className="App">
@@ -52,6 +59,13 @@ function App() {
       <Greeting />
 
       <NameList></NameList>
+
+      <Stylesheet></Stylesheet>
+      <FormHandler></FormHandler>
+      <FormHandlerConst></FormHandlerConst>
+      <LifCycleA></LifCycleA>
+      <ParentComponentCC></ParentComponentCC>
+      <RefComponent ></RefComponent>
 
 
 
