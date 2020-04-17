@@ -28,6 +28,9 @@ import FrparentCom from './component/FrParentInput'
 import UserComponent from './component/userCom'
 import PostList2 from './component/PostList'
 import PostForm from './component/PostForm'
+import { Provider } from 'react-redux'
+import store from './component/redux/cakes/Store'
+import CakeContainner from './component/CakeContainner'
 function App() {
   return (
     <div className="App">
@@ -81,6 +84,13 @@ function App() {
 
       <PostForm />
       <PostList2 />
+
+      <Provider store={store}>
+
+        {/* <CakeContainner></CakeContainner> */}
+      </Provider>
+
+
 
       {/* <googleGreeting></googleGreeting>
        */}
